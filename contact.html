@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div  class="ter" id="ter">
+            ☰
+        </div>
+    
+        <ul class="menu">
+            <li ><a href="acceuil.html">Acceuil</a></li>
+            <li ><a href="a_propos.html">A propos</a></li>
+            <li><a href="formations.html">Formations</a></li>
+            <li ><a href="experiences.html">Expériences</a></li>
+            <li ><a href="competences.html">Compétences</a></li>
+            <li ><a href="hobbies.html">Hobbies</a></li>
+            <li ><a href="contact.html">Contactez-nous</a></li>
+        </ul>
+    </nav>
+    <h1>Contact</h1>
+    <div class="grid_formulaires">
+        <div class="formulaires">
+            <form action="" method="get"  id="Form">
+                <fieldset>
+                    <legend style="background-color: brown;">Contactez-nous</legend>
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom"><br><br>
+        
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom"><br><br>
+        
+                    <label for="email">Email :</label>
+                    <input type="text" id="email" name="email"><br><br>
+        
+                    <label for="mdp">Mot de passe :</label>
+                    <input type="password" id="mdp" name="mdp"><br><br>
+
+                    <label for="commenter">Commenter </label><br>
+                    <textarea id="commenter"></textarea><br>
+        
+                    <button type="submit">Soumettre</button>
+                </fieldset>
+            </form>
+            <h2 id="erreur" style="color: red;"></h2>
+            <h2 id="succes" style="color: green;"></h2>
+        </div>
+        <div class="contact">
+            <ul style="list-style: none;">
+                <li><a href="tel:+221 77 727 06 90"> <ion-icon name="call-outline"></ion-icon></a></li> <br>
+                <li> <a href="mailto:seydinaaliousow80@gmail.com" target="_blank"><ion-icon name="mail-open-outline"></ion-icon></a></li> <br>
+                <li><a href="https://www.linkedin.com/in/aliou-sow-3b3894323" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="24">
+                  </a></li>
+            </ul>   
+        </div>
+
+    </div>
+    <footer>
+        &copy; 2025 @portfolio.sow
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="interaction.js"></script> 
+</body>
+</html>

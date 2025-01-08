@@ -1,0 +1,524 @@
+body{
+    overflow-x: scroll;
+    font-size: 1.1em;
+    background-color:rgba(196, 135, 22,0.89) ;
+}
+
+
+header{
+    background-color:rgba(196, 135, 22,1) ;
+    border-radius:0% 100% 100% 0% / 100% 100% 100% 0%;
+}
+footer{
+    background-color:rgba(196, 135, 22,1) ;
+}
+
+/* **************************** */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.menu {
+    display:none;
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #00bcd4;
+}
+
+
+
+.ter {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+.menu.active {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    background-color: rgba(68, 68, 68,0.85);
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+}
+
+
+h1{
+    text-align: center;
+    text-shadow: 1px 1px 2px gray;
+    color: brown;
+    background-color: rgba(196, 135, 22,0.89);
+}
+
+/* Acceuil */
+@media screen and  (max-width: 300px){
+    .acceuil{
+        
+        display:flex;
+        flex-direction: row;
+        
+    }
+}
+@media screen and (min-width: 900px) {
+    .acceuil{
+        width: 600px;
+        height:auto;
+    }
+}
+.acceuil{
+    margin: 10px;
+    padding: 10px;
+    border: 2px brown solid;
+    border-radius: 10px ;
+}
+
+
+/* competences */
+
+li{
+    font-size: 1.6em;
+}
+.percent_word{
+    position: relative;
+    width: 100%;
+    background-color:  brown;
+    height: 10px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+}
+ .percent_word div {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: blue;
+}
+.percent_pwpoint{
+    position: relative;
+    width: 100%;
+    background-color:  brown;
+    height: 10px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+}
+ .percent_pwpoint div {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: blue;
+}
+.percent_html{
+    position: relative;
+    width: 100%;
+    background-color:  brown;
+    height: 10px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+}
+.percent_html div {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: blue;
+}
+.percent_css{
+    position: relative;
+    width: 100%;
+    background-color:  brown;
+    height: 10px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+}
+.percent_css div {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: blue;
+}
+.percent_c{
+    position: relative;
+    width: 100%;
+    background-color: brown;
+    height: 10px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+}
+.percent_c div {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: blue;
+}
+.percent_javascript{
+    position: relative;
+    width: 100%;
+    background-color: brown;
+    height: 10px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+}
+.percent_javascript div {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: blue;
+}
+
+/* a propos */
+
+.grid_a_propos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    gap: 20px;
+    
+} 
+.photo {
+    width: 350px;
+    height:220px;
+
+}
+.photo img{
+    border-radius: 900px;
+    width: 70%;
+    height: 100%;
+
+}
+.propos{
+    width: 400px;
+    height:auto;
+
+    
+    padding: 10px;
+    border: 2px brown solid;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+} 
+@media screen and  (max-width: 300px){
+    .objectif{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
+@media screen and  (min-width: 900px){
+    .objectif{
+        width: 700px;
+        height:auto;
+    }
+}
+.objectif{
+    
+    padding: 10px;
+    border: 2px brown solid;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+/* LANGUES */
+.languages .percent_francais{
+    position: relative;
+    width: 100%;
+    background-color: brown;
+    height: 10px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+}
+.languages .percent_francais div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: blue;
+   
+}
+.languages .percent_anglais{
+    position: relative;
+    width: 100%;
+    background-color: brown;
+    height: 10px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+}
+.languages .percent_anglais div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: blue;
+   
+}
+.languages .percent_arabe{
+    position: relative;
+    width: 100%;
+    background-color: brown;
+    height: 10px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+}
+.languages .percent_arabe div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: blue;
+   
+}
+@media screen and (min-width: 200px) {
+    .grid_competences{
+        display: grid;
+        grid-template-columns: 600px 600px;
+        grid-template-rows: auto auto;
+        padding-left: 50px;
+        padding-right: 50px;
+        gap: 20px;
+    }
+ }
+@media screen and (max-width: 2000px) {
+    .grid_competences{
+        display: grid;
+        
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-left: 50px;
+        padding-right: 50px;
+        gap: 20px;
+    }
+ }
+.Bureautique{
+    padding: 3px;
+    border: 2px brown solid;
+    border-radius: 10px;
+}
+.Programmation{
+    padding: 3px;
+    border: 2px brown solid;
+    border-radius: 10px;
+}
+.Langues{
+    padding: 3px;
+    border: 2px brown solid;
+    border-radius: 10px;
+    margin-left: 100px;
+}
+.competences{
+    background-color: brown;
+    padding: 2px;
+}
+
+/* formations */
+
+ .important{
+    font-weight: 600;
+ }
+.fond{
+    background-color: brown;
+    font-weight: 600;
+ 
+}
+.formation{
+    background-color: brown;
+    padding: 2px;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
+    
+}
+.Parcours{
+    border: 2px brown solid;
+    border-radius: 0 10px 0 0;
+    padding: 5px;
+    width: 500px;
+    height: auto;
+}
+.image{
+    border-radius: 800px;
+    width: 350px;
+    height: 350px;
+}
+
+ /* HOBBIES */
+ 
+ @media screen and (min-width: 300px) {
+    .hobbies{
+         display: grid;
+         grid-template-columns: 250px 250px 250px;
+         grid-template-rows: 150px 150px;
+         padding-left: 50px;
+         padding-right: 50px;
+         gap: 50px;
+      }
+ }
+ @media screen and (max-width: 1000px) {
+    .hobbies{
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-rows:1fr 1fr;
+         padding-left: 50px;
+         padding-right: 50px;
+         gap: 50px;
+      }
+ }
+ .hobbies1{
+   padding: 3px;
+   background: linear-gradient(50deg, rgba(165, 42, 42,1) 0%, rgba(196, 135, 22,1) 50%);
+   border-radius: 5px;
+   
+}
+.hobbies2{
+   padding: 3px;
+   border-radius: 5px;
+}
+.hobbies3{
+   padding: 3px;
+   background: linear-gradient(50deg, rgba(165, 42, 42,1) 0%, rgba(196, 135, 22,1) 50%);
+   border-radius: 5px;
+}
+.hobbies4{
+   padding: 3px;
+   border-radius: 5px;
+}
+.hobbies5{
+   padding: 3px;
+   background: linear-gradient(50deg, rgba(165, 42, 42,1) 0%, rgba(196, 135, 22,1) 50%);
+   border-radius: 5px;
+}
+.hobbies6{
+   padding: 3px;
+   border-radius: 5px;
+}
+@media screen and (min-width: 300px) {
+    .experiences{
+        display: grid;
+        grid-template-columns: 300px 500px;
+        grid-template-rows: 0.5fr 1fr;
+        gap: 20px;
+    
+    }
+    .introduction{
+     grid-column: 1/3;
+    }
+ }
+@media screen and (max-width: 1000px) {
+   .experiences{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    padding: 20px;
+    gap: 10px;
+   }
+   .introduction{
+    grid-column: 1/3;
+   }
+}
+.introduction{
+    border: 2px brown solid;
+    border-radius: 10px;
+    padding: 10px;
+   }
+.experiences_elevage{
+    border: 2px brown solid;
+    border-radius: 10px;
+    padding-left: 10px;
+   }
+.experiences_agriculture{
+    border: 2px brown solid;
+    border-radius: 10px;
+    padding-left: 10px;
+   }
+ /* CONTACT */
+ .grid_formulaires{
+    display:flex;
+    flex-direction: row;
+ }
+ @media screen and (max-width: 1100px) {
+    .grid_formulaires{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+     }
+     .contact .ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+     }
+ }
+ form{
+    width: 600px;
+    height: auto;
+ }
+ fieldset{
+    border: 2px brown solid;
+ }
+ 
+
+
+
+
